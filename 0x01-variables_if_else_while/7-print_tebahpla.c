@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  *main - prints the alphabet in reverse.
  (*
@@ -10,7 +11,7 @@ int main(void)
 {
 	char c = 'z';
 	
-	:wq!while (c >= 'a')
+	while (c >= 'a')
 	{
 		putchar(c);
 		c--;
