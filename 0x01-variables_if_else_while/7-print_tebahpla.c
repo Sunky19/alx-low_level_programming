@@ -6,10 +6,11 @@
  */
 
 int main(void)
+
 {
 	char c = 'z';
 	
-	while (c >= 'a')
+	:wq!while (c >= 'a')
 	{
 		putchar(c);
 		c--;
