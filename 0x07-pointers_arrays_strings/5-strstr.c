@@ -7,7 +7,7 @@
  *Return: char value
  */
 
-char _strstr(char *haystack, char *needle)
+char *_strstr(char *haystack, char *needle)
 
 {
 	int a = 0, b = 0;
@@ -18,7 +18,7 @@ char _strstr(char *haystack, char *needle)
 		{
 			if (haystack[a + b] != needle[b])
 			{
-				break
+				break;
 			}
 			b++;
 		}
