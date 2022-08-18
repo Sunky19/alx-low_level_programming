@@ -14,7 +14,6 @@ void free_listp(listp_t **head)
 	if (head != NULL)
 	{
 		curr = *head;
-
 		while ((temp = curr) != NULL)
 		{
 			curr = curr->next;
@@ -45,12 +44,12 @@ size_t print_listint_safe(const listint_t *head)
 		new->p = (void *)head;
 		new->next = hptr;
 		hptr = new;
+
 		add = hptr;
 
 		while (add->next != NULL)
 		{
 			add = add->next;
-
 			if (head == add->p)
 			{
 				printf("-> [%p] %d\n", (void *)head, head->n);
